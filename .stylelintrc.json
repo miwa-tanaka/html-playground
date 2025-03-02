@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "rules": {
+    "alpha-value-notation": "number",
+    "font-weight-notation": "numeric",
+    "selector-pseudo-element-colon-notation": "double",
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless", "first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else"]
+      }
+    ]
+  }
+}
