@@ -8,3 +8,7 @@ html,
 body {
   font-family: Arial, sans-serif;
 }
+
+.main-elm {
+  margin: 0 1em;
+}
