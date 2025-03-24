@@ -1,0 +1,81 @@
+#accordion-group {
+  width: 24em;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 2px solid #3a4a2f;
+  border-radius: 8px;
+}
+
+/* button */
+
+.title {
+  margin: 0;
+}
+
+.title button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+  font-weight: 700;
+  color: #3a4a2f;
+  cursor: pointer;
+  background-color: #f6f7ef;
+  border: 1px solid #3a4a2f;
+  border-right: none;
+  border-left: none;
+}
+
+.title button:hover,
+.title button:focus {
+  color: #fff;
+  background-color: #3a4a2f;
+  transition: 0.2s;
+}
+
+.title:first-of-type button {
+  border-top: none;
+}
+
+.title:last-of-type button[aria-expanded="false"] {
+  border-bottom: none;
+}
+
+.title .arrow {
+  width: 0.6rem;
+  height: 0.6rem;
+  pointer-events: none;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-20%) rotate(45deg);
+}
+
+.title button[aria-expanded="true"] .arrow {
+  transform: translateY(20%) rotate(-135deg);
+}
+
+/* panel */
+
+.accordion-panel {
+  max-height: 16em;
+  margin: 0.5em 1em;
+  overflow-y: scroll;
+  color: #3a4a2f;
+}
+
+.accordion-panel p {
+  max-width: 80ch;
+}
+
+.accordion-panel a {
+  font-weight: 700;
+  color: #3a4a2f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.accordion-panel a:hover,
+.accordion-panel a:focus {
+  text-decoration: none;
+}
