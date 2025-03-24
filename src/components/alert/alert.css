@@ -1,0 +1,30 @@
+.alert-button {
+  width: 8em;
+  padding: 1em 0.5em;
+  font-weight: 700;
+  color: #3a4a2f;
+  cursor: pointer;
+  background-color: #f6f7ef;
+  border: 2px solid #3a4a2f;
+  border-radius: 8px;
+}
+
+.alert-button:hover,
+.alert-button:focus {
+  color: #fff;
+  background-color: #3a4a2f;
+  transition: 0.2s;
+}
+
+#alert-content {
+  display: none;
+}
+
+#alert-content.visible {
+  display: block;
+}
+
+#alert-content p {
+  font-size: 1.2rem;
+  color: #d3030e;
+}
