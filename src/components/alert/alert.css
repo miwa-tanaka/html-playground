@@ -7,13 +7,13 @@
   background-color: #f6f7ef;
   border: 2px solid #3a4a2f;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
 .alert-button:hover,
 .alert-button:focus {
   color: #fff;
   background-color: #3a4a2f;
-  transition: 0.2s;
 }
 
 #alert-content {
